@@ -1,1 +1,40 @@
-{     "devDependencies": {         "grunt-sails-linker": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-grunt-sails-linker",     "homepage": "https://github.com/npmtest/node-npmtest-grunt-sails-linker",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-grunt-sails-linker.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [grunt-sails-linker (v1.0.4)](http://sailsjs.com)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-sails-linker.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-sails-linker) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-sails-linker.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-sails-linker)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "grunt-sails-linker": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-grunt-sails-linker",
+    "keywords": [
+        "coverage",
+        "test",
+        "grunt-sails-linker"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_grunt_sails_linker.js",
+    "name": "npmtest-grunt-sails-linker",
+    "nameAlias": "npmtest_grunt_sails_linker",
+    "nameOriginal": "npmtest-grunt-sails-linker",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-grunt-sails-linker.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
