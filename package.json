@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "#### test coverage for  [grunt-sails-linker (v1.0.4)](http://sailsjs.com)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-sails-linker.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-sails-linker) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-sails-linker.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-sails-linker)",
+    "description": "#### basic test coverage for  [grunt-sails-linker (v1.0.4)](http://sailsjs.com)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-sails-linker.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-sails-linker) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-sails-linker.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-sails-linker)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "grunt-sails-linker": "*",
